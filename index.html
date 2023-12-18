@@ -67,12 +67,14 @@ section::after {
 /* Style the footer */
 footer {
   background-color: #040811;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px rgb(11, 55, 233), 0 0 25px rgb(18, 48, 218), 0 0 5px rgb(36, 85, 233);
 }
-
+img.a {
+  vertical-align: middle;
+}
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
@@ -112,7 +114,7 @@ footer {
         }
         
         a:hover, a:active {
-          background-color: blue;
+          background-color: rgb(57, 57, 245);
         }
         </style>
       <img src="doc-files/2GU.gif" alt="chibi" width="200" height="200">
@@ -128,9 +130,10 @@ footer {
 </section>
 
 <footer>
-  <p>Have a nice day!</p>
-  <img src="doc-files/catt.jpeg" alt="chibi" width="100" height="100">
+  
+  <p>Have a nice day! <img class="a" src="doc-files/catt.jpeg" width="80" height="80"></p>
 </footer>
 
 </body>
 </html>
+
