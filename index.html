@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>Home Page</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell Sans&effect=3d">
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <meta charset="utf-8">
@@ -12,8 +13,9 @@
 }
 
 body {
-  font-family: Courier New, Trebuchet MS, sans-serif;
+  font-family: "Shantell Sans", sans-serif;
 }
+
 
 /* Style the header */
 header {
@@ -22,7 +24,7 @@ header {
   text-align: center;
   font-size: 35px;
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px rgb(48, 11, 232), 0 0 5px rgb(14, 14, 223);
+  text-shadow: 1px 1px 2px rgb(18, 4, 110), 0 0 25px rgb(48, 11, 232), 0 0 5px rgb(14, 14, 223);
 
 }
 
@@ -77,6 +79,40 @@ footer {
 img.a {
   vertical-align: middle;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.waviy {
+  position: static;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 20px;
+}
+.waviy span {
+  font-family: 'Shantell Sans';
+  position: static;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(14, 30, 102), 0 0 25px rgb(18, 48, 218), 0 0 5px rgb(36, 85, 233);
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
@@ -90,7 +126,7 @@ img.a {
 
 
 <header>
-  <h2>Welcome to Sunny Aris page!</h2>
+  <h2 class="font-effect-3d">Welcome to Sunny Aris page!</h2>
   <img src="doc-files/chibi.jpg" alt="chibi" width="100" height="100">
 </header>
 
@@ -134,7 +170,32 @@ img.a {
 </section>
 
 <footer>
-  <p>Have a nice day! <img class="a" src="doc-files/catt.jpeg" width="80" height="80"></p>
+
+
+  <body>
+    <div class="waviy">
+      <span style="--i:1">H</span>
+      <span style="--i:2">a</span>
+      <span style="--i:3">v</span>
+      <span style="--i:4">e</span>
+      <span style="--i:5"></span>
+      <span style="--i:6">A</span>
+      <span style="--i:7"></span>
+      <span style="--i:8">N</span>
+      <span style="--i:9">i</span>
+      <span style="--i:10">c</span>
+      <span style="--i:11">e</span>
+      <span style="--i:12"></span>
+      <span style="--i:13">D</span>
+      <span style="--i:13">a</span>
+      <span style="--i:13">y</span>
+      <span style="--i:13"></span>
+      <span style="--i:14">!</span>
+      
+
+      <img class="a" src="doc-files/catt.jpeg" width="80" height="80">
+     </div>
+   </body>
 </footer>
 
 </body>
