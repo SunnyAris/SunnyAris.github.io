@@ -51,7 +51,7 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 750px; 
+  height: 850px; 
   background: #397cd7;
   padding: 20px;
 }
@@ -63,14 +63,19 @@ nav ul {
   margin:0px;
 }
 
-
+#borderimg { 
+  border: 15px solid transparent;
+  padding: 10px;
+  border-image: url(doc-files/image4.png) 25% round;
+  
+}
 
 article {
   float: left;
   padding: 20px;
   width: 70%;
   background: #397cd7;
-  height: 750px; 
+  height: 850px; 
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 26, 255), 0 0 5px darkblue;
   overflow: scroll;
@@ -80,6 +85,19 @@ article {
   background-attachment: fixed;  
   background-size: cover;
   background-color: #397cd7;
+ 
+  border: 15px solid transparent;
+  padding: 10px;
+  border-image: url(doc-files/image4.png) 25% round;
+  
+}
+
+
+#aborderimg { 
+  border: 15px solid transparent;
+  padding: 10px;
+  border-image: url(doc-files/image4.png) 25% round;
+  
 }
 
 body:before {
@@ -199,18 +217,20 @@ body {
   <nav>
    
     <ul>
-      <li><a href="https://sunnyaris.github.io/watch.html"><img src="doc-files/cloudmarker.png"/> Clock<img src="doc-files/cloudmarker.png"/></a></li>
+      <li id="borderimg"><a href="https://sunnyaris.github.io/watch.html"><img src="doc-files/cloudmarker.png"/> Clock<img src="doc-files/cloudmarker.png"/></a></li>
       <br>
-      <li><a href="https://sunnyaris.github.io/game.html"><img src="doc-files/cloudmarker.png"/> Game<img src="doc-files/cloudmarker.png"/></a></li>
+      <li id="borderimg"><a href="https://sunnyaris.github.io/game.html"><img src="doc-files/cloudmarker.png"/> Game<img src="doc-files/cloudmarker.png"/></a></li>
       <br>
-      <li><a href="https://sunnyaris.github.io/gallery.html"><img src="doc-files/cloudmarker.png"/> Gallery<img src="doc-files/cloudmarker.png"/></a></li>
+      <li id="borderimg"><a href="https://sunnyaris.github.io/gallery.html"><img src="doc-files/cloudmarker.png"/> Gallery<img src="doc-files/cloudmarker.png"/></a></li>
       <br>
-      <li><a href="https://sunnyaris.github.io/image_maps.html"><img src="doc-files/cloudmarker.png"/> Image Map<img src="doc-files/cloudmarker.png"/></a></li>
+      <li id="borderimg"><a href="https://sunnyaris.github.io/image_maps.html"><img src="doc-files/cloudmarker.png"/> Image Map<img src="doc-files/cloudmarker.png"/></a></li>
       <br>
       <style>
         a:link, a:visited {
           background-color: #6495ED;
+          /*
           border: 8px ridge rgb(250, 251, 252);
+          */
           color: white;
           text-shadow: 1px 1px 2px rgb(6, 10, 86), 0 0 25px rgb(58, 58, 224), 0 0 5px rgb(5, 5, 134);
           padding: 15px 10px;
@@ -221,15 +241,15 @@ body {
           font-size: 30px;
           align-items: center;
           justify-content: center;
-          margin-left: 10px;
+          margin-left: 0px;
           
         }
         
         a:hover, a:active {
           background-color: rgb(57, 57, 245);
         }
-        </style>
-      <img src="doc-files/2GU.gif" alt="cat" width="200" height="200">
+        </style  >
+      <img id="aborderimg" src="doc-files/2GU.gif" alt="cat" width="200" height="200">
 
     </ul>
   </nav>
