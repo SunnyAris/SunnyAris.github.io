@@ -51,7 +51,7 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 850px; 
+  height: 900px; 
   background: #397cd7;
   padding: 20px;
 }
@@ -61,10 +61,18 @@ nav ul {
   list-style-type: none;
   padding:0px;
   margin:0px;
+ 
 }
 
 #borderimg { 
-  border: 15px solid transparent;
+  border: 25px solid transparent;
+  padding: 10px;
+  border-image: url(doc-files/image4.png) 25% round;
+  
+}
+
+#aborderimg { 
+  border: 25px solid transparent;
   padding: 10px;
   border-image: url(doc-files/image4.png) 25% round;
   
@@ -75,7 +83,7 @@ article {
   padding: 20px;
   width: 70%;
   background: #397cd7;
-  height: 850px; 
+  height: 900px; 
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 26, 255), 0 0 5px darkblue;
   overflow: scroll;
@@ -86,15 +94,7 @@ article {
   background-size: cover;
   background-color: #397cd7;
  
-  border: 15px solid transparent;
-  padding: 10px;
-  border-image: url(doc-files/image4.png) 25% round;
-  
-}
-
-
-#aborderimg { 
-  border: 15px solid transparent;
+  border: 25px solid transparent;
   padding: 10px;
   border-image: url(doc-files/image4.png) 25% round;
   
@@ -188,7 +188,7 @@ body {
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   nav, article {
     width: auto;
     height: auto;
@@ -208,8 +208,12 @@ body {
 
 <header>
   <h2 class="font-effect-3d">Welcome to Sunny Aris page!</h2>
-  <p><img src="doc-files/chibi.jpg" alt="chibi" width="100" height="100"
-  style="vertical-align:middle;margin:15px 0px"></p>
+  <p><img src="doc-files/chibi.jpg" alt="chibi" width="100" height="100" usemap="#workmap"
+    style="vertical-align:middle;margin:15px 0px"></p>
+  
+  <map name="workmap">
+    <area shape="circle" coords="51,48,44" alt="chibi" href="https://github.com/SunnyAris">
+  </map>
   
 </header>
 
@@ -225,6 +229,7 @@ body {
       <br>
       <li id="borderimg"><a href="https://sunnyaris.github.io/image_maps.html"><img src="doc-files/cloudmarker.png"/> Image Map<img src="doc-files/cloudmarker.png"/></a></li>
       <br>
+      
       <style>
         a:link, a:visited {
           background-color: #6495ED;
@@ -247,16 +252,19 @@ body {
         
         a:hover, a:active {
           background-color: rgb(57, 57, 245);
+        
         }
-        </style  >
-      <img id="aborderimg" src="doc-files/2GU.gif" alt="cat" width="200" height="200">
-
+       </style >
+        <img id="aborderimg" src="doc-files/2GU.gif" alt="cat" width="200" height="200">
+       
     </ul>
   </nav>
   
   <article>
-    <h1 style="font-size:40px;">Test page </h1>
+    <h1 style="font-size:50px;">Test page </h1>
+    <br>
     <h2 style="font-size:30px;">Test page containing html and css samples.</h2>
+    <br>
       <p style="font-size:30px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu turpis egestas pretium aenean pharetra magna. Consequat id porta nibh venenatis cras sed. Purus in massa tempor nec. Sed libero enim sed faucibus. Habitant morbi tristique senectus et netus et malesuada fames ac. Felis eget nunc lobortis mattis aliquam faucibus purus. Tellus cras adipiscing enim eu turpis. Sollicitudin nibh sit amet commodo. Cras semper auctor neque vitae.
 
