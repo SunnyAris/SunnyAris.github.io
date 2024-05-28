@@ -58,26 +58,11 @@ img.b {
   position: relative;
   width: 10px;
   height: 10px;
-  box-sizing: border-box;
+  
 }
-
-@media (max-width: 768px) {
-  .container {
-    width: 300px;
-    height: 200px;
-  }
-}
-
-/* Animacja dla małych ekranów (telefonów) */
-@media (max-width: 480px) {
-  .container {
-    width: 200px;
-    height: 150px;
-  }
-}
-
 
 .container::before {
+  transform: scale(1.0);
   content: "";
   position: absolute;
   top: 20;
@@ -92,9 +77,25 @@ img.b {
   animation-duration: 8s;
   animation-delay: 2s;
   animation-direction: alternate;
+  animation-iteration-count: 3;
   width: 150px;
   height: 150px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    transform: scale(0.8); 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    transform: scale(0.6); 
+  }
+}
+
+
 
 @keyframes example {
   0%   {background-image:url(doc-files/flycat3.png); left:0px; top:0px;}
@@ -207,7 +208,7 @@ footer {
   left:0px;
   bottom:0px;
   height:80px;
-   width:100%;
+  width:100%;
 }
 
 img.a {
