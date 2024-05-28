@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  
+   
 * {
   box-sizing: border-box;
 }
@@ -18,11 +18,9 @@
   background: white;
 }
 
-
 h1::after {
   content: url(doc-files/cloudcolor1.png);
 }
-
 
 .clearfix::after {
   content: "";
@@ -34,8 +32,6 @@ body {
   font-family: "Shantell Sans", sans-serif;
 }
 
-
-
 /* Style the header */
 header {
   background-color: #397cd7;
@@ -46,6 +42,7 @@ header {
   text-shadow: 1px 1px 2px rgb(18, 4, 110), 0 0 25px rgb(48, 11, 232), 0 0 5px rgb(14, 14, 223);
 
 }
+
 img.b {
   height: 150px;
   width: 150px;
@@ -55,6 +52,40 @@ img.b {
   border-image: url(doc-files/image4.png) 25% round;
   margin:20px;
   padding: 0px;
+}
+
+.container {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 20;
+  left: 100;
+  width: 100%;
+  height: 100%;
+  background-image: url(doc-files/flycat3.png);
+  background-size: cover;
+  opacity: 1; 
+  z-index: 2; 
+  animation-name: example;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes example {
+  0%   {background-image:url(doc-files/flycat3.png); left:0px; top:0px;}
+  20%  {background-image:url(doc-files/flycat3.png); left:900px; top:100px;}
+  40%  {background-image:url(doc-files/flycat3.png); left:50px; top:300px;}
+  60%  {background-image:url(doc-files/flycat3.png); left:1000px; top:400px;}
+  80%  {background-image:url(doc-files/flycat3.png); left:400px; top:700px;}
+  100% {background-image:url(doc-files/flycat3.png); left:0px; top:0px;}
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -92,7 +123,6 @@ nav ul {
   background-image: repeating-conic-gradient(#397cd7 10%, white 20%);
   border-radius: 50%;
 }
-
 
 article {
   float: left;
@@ -135,7 +165,6 @@ body:before {
   background-size: cover;
 }
 
-
 /* Clear floats after the columns */
 section::after {
   content: "";
@@ -159,9 +188,8 @@ footer {
    bottom:0px;
    height:80px;
    width:100%;
-
-
 }
+
 img.a {
   vertical-align: middle;
 }
@@ -170,19 +198,20 @@ img.a {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
- 
+  box-sizing: border-box; 
 }
 
 body {
   background-color:  #040811;
 }
+
 .waviy {
   position: static;
   /* odbicie lustrzane*/
   -webkit-box-reflect: below -60px linear-gradient(transparent, rgba(0,0,0,.2));
   font-size: 20px;
 }
+
 .waviy span {
   font-family: 'Shantell Sans';
   position: static;
@@ -191,9 +220,9 @@ body {
   text-shadow: 1px 1px 2px rgb(14, 30, 102), 0 0 25px rgb(18, 48, 218), 0 0 5px rgb(36, 85, 233);
   text-transform: uppercase;
   animation: waviy 3s infinite;
-  animation-delay: calc(.1s * var(--i));
-  
+  animation-delay: calc(.1s * var(--i));  
 }
+
 @keyframes waviy {
   0%,40%,100% {
     transform: translateY(0)
@@ -202,6 +231,7 @@ body {
     transform: translateY(-20px)
   }
 }
+
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 650px) {
@@ -221,6 +251,10 @@ body {
     }
   </style>
   </head>
+
+  <div class="container">
+ 
+  </div>
 
 <header>
   <h2 class="font-effect-3d">Welcome to Sunny Aris page!</h2>
@@ -297,8 +331,6 @@ body {
 </section>
 
 <footer>
-
-
   <body>
     <div class="waviy">
       <span style="--i:1">H</span>
