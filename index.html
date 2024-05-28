@@ -71,8 +71,8 @@ img.b {
 }
 
 .container::before {
-  top: 0px;
-  left: 0px;
+  top: 20px;
+  left: 20px;
   width: 150px;
   height: 150px;
   background-image: url(doc-files/flycat3.png);
@@ -83,8 +83,8 @@ img.b {
 }
 
 .container::after {
-  top: 120px;  
-  left: 1200px; 
+  top: 190px;  
+  left: 0px; 
   width: 170px;  
   height: 170px; 
   background-image: url(doc-files/ballooncat1.png); 
@@ -95,18 +95,18 @@ img.b {
 }
 
 @keyframes example2 {
-  0%   {background-image:url(doc-files/ballooncat1.png); left:1200px; top:120px;}
-  50%  {background-image:url(doc-files/ballooncat1.png); left:1200px; top:700px;}
-  100%  {background-image:url(doc-files/ballooncat1.png); left:1200px; top:120px;}
+  0%   {background-image:url(doc-files/ballooncat1.png); left:0px; top:190px;}
+  50%  {background-image:url(doc-files/ballooncat1.png); left:0px; top:700px;}
+  100%  {background-image:url(doc-files/ballooncat1.png); left:0px; top:190px;}
 }
 
 @keyframes example {
-  0%   {background-image:url(doc-files/flycat3.png); left:0px; top:0px;}
+  0%   {background-image:url(doc-files/flycat3.png); left:20px; top:20px;}
   20%  {background-image:url(doc-files/flycat3.png); left:900px; top:100px;}
   40%  {background-image:url(doc-files/flycat3.png); left:50px; top:300px;}
   60%  {background-image:url(doc-files/flycat3.png); left:1000px; top:400px;}
   80%  {background-image:url(doc-files/flycat3.png); left:400px; top:700px;}
-  100% {background-image:url(doc-files/flycat3.png); left:0px; top:0px;}
+  100% {background-image:url(doc-files/flycat3.png); left:20px; top:20px;}
 }
 
 /* Create two columns/boxes that floats next to each other */
