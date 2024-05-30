@@ -71,33 +71,13 @@ img.b {
   
 }
 
-::before{
-transform: scale(1.0);
+.container::before,
+.container::after {
   content: "";
   position: absolute;
   background-size: cover;
-  opacity: 1; 
-  z-index: 2; 
-}
-::after{
-  transform: scale(1.0);
-  content: "";
-  position: absolute;
-  background-size: cover;
-  opacity: 1; 
-  z-index: 2; 
-
-}
-
-
-::top-element {
-  transform: scale(1.0);
-  content: "";
-  position: absolute;
-  background-size: cover;
-  opacity: 1; 
-  z-index: 3; 
-  
+  opacity: 1;
+  z-index: 2;
 }
 
 .container::before {
@@ -127,22 +107,6 @@ transform: scale(1.0);
   animation-iteration-count: 3;
 }
 
-.container::top-element {
- 
-  top: 50px;
-  left: 250px;
-  width: 100px;
-  height: 100px;
-  background-image: url(doc-files/aalxa174p.png); 
-  animation-name: example3; 
-  animation-duration: 6s; 
-  animation-delay: 1s; 
-  animation-direction: alternate; 
-  animation-iteration-count: 3; 
-  z-index: 3
-}
-
-
 @media (max-width: 768px) {
   .container {
     transform: scale(0.8); 
@@ -169,16 +133,9 @@ transform: scale(1.0);
 
 @keyframes example2 {
   0%   {background-image:url(doc-files/ballooncat1.png); left:0px; top:190px;}
-  50%  {background-image:url(doc-files/ballooncat1.png); left:0px; top:650px;}
+  50%  {background-image:url(doc-files/ballooncat1.png); left:0px; top:800px;}
   100%  {background-image:url(doc-files/ballooncat1.png); left:0px; top:190px;}
 }
-
-@keyframes example3 {
-  0%   {background-image:url(doc-files/aalxa174p.png); left:50px; top:250px;}
-  50%  {background-image:url(doc-files/aalxa174p.png); left:650px; top:650px;}
-  100%  {background-image:url(doc-files/aalxa174p.png); left:50px; top:250px;}
-}
-
 
 /* Create two columns/boxes that floats next to each other */
 nav {
